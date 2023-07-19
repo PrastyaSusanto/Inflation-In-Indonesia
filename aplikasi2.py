@@ -47,6 +47,7 @@ def main():
         plt.ylabel('Predicted Inflation (in percent) ')
         plt.gca().spines['top'].set_visible(False)
         plt.gca().spines['right'].set_visible(False)
+        plt.xticks(rotation=90)
         plt.title('Predicted Inflation in Indonesia over time')
          # Set dark background
         st.pyplot(plt)
