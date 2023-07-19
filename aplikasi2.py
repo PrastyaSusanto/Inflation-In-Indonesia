@@ -46,7 +46,7 @@ def main():
         plt.plot(results['Date'], results['Predicted Inflation (in percent)'])
         plt.xlabel('Year')
         plt.ylabel('Predicted Inflation (in percent)')
-        plt.xticks(rotation=45)
+        plt.xticks(rotation=90)
         plt.gca().spines['top'].set_visible(False)
         plt.gca().spines['right'].set_visible(False)
         plt.title('Predicted Inflation in Indonesia over Time')
