@@ -20,12 +20,9 @@ def main():
 
     if submit:
         data = {
-            
             'Tanggal Referensi': pd.date_range(start=start_date, end=end_date).to_list()
         }
         data = pd.DataFrame(data)
-
-        
 
         # Convert Tanggal column to datetime and calculate the difference from the reference date
         data['Tanggal Referensi'] = (pd.to_datetime(data['Tanggal Referensi']) - pd.to_datetime('2003-01-01')).dt.days
@@ -38,7 +35,7 @@ def main():
         predictions = model.predict(data)
 
         # Create a DataFrame to store the results
-        results = pd.DataFrame({'Date': pd.date_range(start=start_date, end=end_date), 'Predicted Inflation (in percent)': predictions})
+        results = pd.DataFrame({'Date': pd.date_range(start=start_date, end=end_date).strftime('%Y-%m-%d'), 'Predicted Inflation (in percent)': predictions})
 
         # Visualize the results using matplotlib
         plt.style.use('dark_background') 
