@@ -43,7 +43,7 @@ def main():
 
         # Visualize the results using matplotlib
         plt.style.use('dark_background') 
-        plt.plot(results['Date'], results['Predicted Inflation (in percent)'])
+        plt.plot(results['Date'], results['Predicted Inflation (in percent)'], color='royalblue')
         plt.xlabel('Year')
         plt.ylabel('Predicted Inflation (in percent)')
         plt.xticks(rotation=90)
