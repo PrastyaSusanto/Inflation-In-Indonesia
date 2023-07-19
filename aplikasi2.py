@@ -39,7 +39,7 @@ def main():
 
         # Visualize the results using matplotlib
         plt.style.use('dark_background') 
-        plt.plot(results['Date'], results['Predicted Inflation (in percent)'])
+        plt.plot(results['Date'], results['Predicted Inflation (in percent)'], color='royalblue')
         plt.xlabel('Date')
         plt.ylabel('Predicted Inflation (in percent) ')
         plt.gca().spines['top'].set_visible(False)
