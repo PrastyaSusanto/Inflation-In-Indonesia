@@ -12,6 +12,7 @@ def main():
     st.set_page_config(layout="centered", page_icon='💸💸💸', page_title='Let\'s Predict Inflation per Month in Indonesia!')
     st.title(title)
     st.write(subtitle)
+    st.write("For more information about this project, check here: [GitHub Repo](https://github.com/PrastyaSusanto/Inflation-In-Indonesia)")
 
     form = st.form("Data Input")
     start_date = form.date_input('Start Date')
@@ -60,7 +61,7 @@ def main():
         # Optionally, you can also show the raw data in a table
         st.dataframe(results)
 
-    st.write("For more information about this project, check here: [GitHub Repo](https://github.com/PrastyaSusanto/Inflation-In-Indonesia)")
+   
 
 if __name__ == '__main__':
     main()
