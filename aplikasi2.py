@@ -39,7 +39,7 @@ def main():
         results = pd.DataFrame({'Date': pd.date_range(start=start_date, end=end_date).strftime('%Y-%m-%d'), 'Predicted Inflation (in percent)': predictions})
 
         # Format the predicted inflation values as integers
-        results['Predicted Inflation (in percent)'] = results['Predicted Inflation (in percent)'].astype(int)
+        results['Predicted Inflation (in percent)'] = results['Predicted Inflation (in percent)']
 
         # Visualize the results using matplotlib
         plt.style.use('dark_background') 
