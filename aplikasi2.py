@@ -54,6 +54,7 @@ def main():
 
         # Optionally, you can also show the raw data in a table
         st.dataframe(results)
+    st.write("For more information about this project, check here: [GitHub Repo](https://github.com/PrastyaSusanto/Inflation-In-Indonesia)")
 
 if __name__ == '__main__':
     main()
